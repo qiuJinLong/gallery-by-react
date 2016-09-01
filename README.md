@@ -1,2 +1,3 @@
 # gallery-by-react
-image project
+
+react+webpack+sass 图片墙
