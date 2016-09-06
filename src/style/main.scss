@@ -25,6 +25,7 @@ html, body{
 	height: 100%;
 	overflow: hidden;
 	background-color: #ddd;
+	perspective:1800px;
 	@at-root{
 		.img-figure{
 			position: absolute;
@@ -36,8 +37,10 @@ html, body{
 			box-sizing:border-box;
 			cursor: pointer;
 			transform-style:preserve-3d;
+			transition:all .6s ease-in-out;
+			transform-origin: 0 50% 0;
 			&.is-inverse{
-				transform:rotateY(180deg);
+				transform: translate(320px) rotateY(180deg);
 			}
 		}
 		.figcaption{
