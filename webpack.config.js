@@ -3,7 +3,8 @@ module.exports = {
 	entry:"./src/components/GalleryByReactApp.js",
 	output: {
 		path:__dirname,
-		filename:"bundle.js"
+		filename:"./src/dist/bundle.js",
+		publicPath: '/dist/'
 	},
 	// require("../src/styles/main.css") ==> require("styles/main.css")
 	// resolve: {
